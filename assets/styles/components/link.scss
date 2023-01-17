@@ -1,0 +1,15 @@
+.link {
+	text-decoration: underline;
+	transition: var(--transition-default);
+
+	&:hover {
+		text-decoration-color: transparent;
+	}
+
+	&--text-decoration-none {
+		text-decoration-color: transparent;
+		&:hover {
+			text-decoration-color: currentColor;
+		}
+	}
+}

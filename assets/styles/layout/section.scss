@@ -1,0 +1,22 @@
+.section {
+	padding: calc(var(--padding-base) * 4) 0;
+	background-color: var(--color-background-primary);
+	&--secondary {
+		background-color: var(--color-background-secondary);
+	}
+}
+
+.hero {
+	min-height: 50rem;
+	display: flex;
+	align-items: center;
+	color: var(--color-background-primary);
+	background-color: var(--color-text-primary);
+	@media screen and (prefers-color-scheme: dark) {
+		color: var(--color-text-primary);
+		background-color: var(--color-background-primary);
+	}
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}

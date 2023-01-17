@@ -1,0 +1,9 @@
+:focus-visible {
+	transition: var(--transition-default);
+	outline: currentColor solid 1px;
+	outline-offset: .25em;
+}
+
+a, button, label {
+	cursor: pointer;
+}
