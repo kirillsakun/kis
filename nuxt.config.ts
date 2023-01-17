@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import privateRuntimeConfig from './config.private';
+import config from './config.private';
 export default defineNuxtConfig({
+	modules: ['@nuxtjs/supabase'],
 	runtimeConfig: {
 		public: {
 			name: 'kis',
@@ -11,7 +12,8 @@ export default defineNuxtConfig({
 				instagram: 'https://instagram.com/tortik_s_vishney',
 			},
 		},
-		...privateRuntimeConfig,
+		...config.privateRuntimeConfig,
 	},
 	css: ['~/assets/styles/main.scss'],
+	...config.supabase,
 });
